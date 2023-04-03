@@ -24,6 +24,11 @@ import MuiList from './component/MuiList';
 import MuiCheck from './component/MuiCheck';
 import MuiTooltip from './component/MuiTooltip';
 import MuiTabe from './component/MuiTabe';
+import MuiAlet from './component/MuiAlet';
+import MuiSnackBar from './component/MuiSnackBar';
+import Muidialog from './component/Muidialog';
+import MuiProgress from './component/MuiProgress';
+import MuiSkeleton from './component/MuiSkeleton';
 function App() {
   return (
     <div className="App">
@@ -42,16 +47,21 @@ function App() {
          {/* <MuiAccordion /> */}
          {/* <MuiImagelist /> */}
         < MuiNavbar />
-        < MuiTabe />
+        {/* < MuiTabe /> */}
         <MuiTooltip/>
         <Muibreadcrumbs />
         <Muidrawer/>
        {/* < Muibody /> */}
        {/* <MuiBotNav /> */}
+       {/* < MuiAlet/>
        < MuiSpeeddail/>
        < MUiAvatar/>
        < MuiList/>
-       <MuiCheck/>
+       <MuiCheck/> */}
+       {/* <MuiSnackBar/>
+       <Muidialog  />
+       <MuiProgress/> */}
+       <MuiSkeleton/>
 
     </div>
   );
