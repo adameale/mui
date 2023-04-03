@@ -1,4 +1,6 @@
 import React from 'react';
+import {LocalizationProvider} from '@mui/lab'
+import AdapterDateFns from '@mui/lab/AdapterDateFns'
 import './App.css';
 import MuiButton from './component/MuiButton';
 import Typographyy from './component/Typographyy';
@@ -29,8 +31,12 @@ import MuiSnackBar from './component/MuiSnackBar';
 import Muidialog from './component/Muidialog';
 import MuiProgress from './component/MuiProgress';
 import MuiSkeleton from './component/MuiSkeleton';
+import Muiloadingbutton from './component/Muiloadingbutton';
+import MuiDatePicker from './component/MuiDatePicker';
+import MuiTabs from './component/MuiTabs';
 function App() {
   return (
+    // <LocalizationProvider dateAdapter={AdapterDateFns}  >
     <div className="App">
 
       {/* <Typographyy /> */}
@@ -61,9 +67,13 @@ function App() {
        {/* <MuiSnackBar/>
        <Muidialog  />
        <MuiProgress/> */}
-       <MuiSkeleton/>
+       {/* <MuiSkeleton/> */}
+       {/* < Muiloadingbutton/> */}
+       < MuiTabs/>
+       {/* <MuiDatePicker/> */}
 
     </div>
+    // </LocalizationProvider>
   );
 }
 
