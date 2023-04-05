@@ -1,28 +1,26 @@
 import React from 'react'
 import {Stack,TextField} from '@mui/material'
-import {DatePicker,TimePicker} from '@mui/lab'
+import { DatePicker } from '@mui/x-date-pickers';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import {useState} from 'react'
  const MuiDatePicker = () => {
-    const [selectedDate,setSelectedDate] =useState<Date | null>(null)
-  console.log(selectedDate)
-  const [selectedTime,setSelectedTime] =useState<Date | null>(null)
-  console.log(selectedTime)
+  //   const [selectedDate,setSelectedDate] =useState<Date | null>(null)
+  // console.log(selectedDate)
+  const [value,setValue] =useState<Date | null>(null)
+  console.log(value)
     return (
+      <LocalizationProvider >
     <Stack spacing={4} sx={{width:'250px'}}  > 
-    <DatePicker label='Date picker' 
-     renderInput={(param)=> <TextField  {...param}
-   />}   value={selectedDate}
-    onChange={(newValue)=>{
-    setSelectedDate(newValue)
-   }} /> <TimePicker label='Time picker' 
-   renderInput={(params)=> <TextField  {...params}
- />}   value={selectedDate}
-  onChange={(newValue)=>{
-    setSelectedTime(newValue)
- }} /> 
+    <DatePicker
+          label="Controlled picker"
+          value={value}
+          onChange={(newValue) => setValue(newValue)}
+        
+  /> 
 
 
        </Stack>
+       </LocalizationProvider>
   )
 }
 

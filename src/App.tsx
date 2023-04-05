@@ -36,7 +36,7 @@ import MuiDatePicker from './component/MuiDatePicker';
 import MuiTabs from './component/MuiTabs';
 function App() {
   return (
-    // <LocalizationProvider dateAdapter={AdapterDateFns}  >
+     <LocalizationProvider dateAdapter={AdapterDateFns}>
     <div className="App">
 
       {/* <Typographyy /> */}
@@ -54,9 +54,9 @@ function App() {
          {/* <MuiImagelist /> */}
         < MuiNavbar />
         {/* < MuiTabe /> */}
-        <MuiTooltip/>
+         <MuiTooltip/>
         <Muibreadcrumbs />
-        <Muidrawer/>
+        <Muidrawer/> 
        {/* < Muibody /> */}
        {/* <MuiBotNav /> */}
        {/* < MuiAlet/>
@@ -69,11 +69,11 @@ function App() {
        <MuiProgress/> */}
        {/* <MuiSkeleton/> */}
        {/* < Muiloadingbutton/> */}
-       < MuiTabs/>
-       {/* <MuiDatePicker/> */}
+       {/* < MuiTabs/> */}
+       <MuiDatePicker/>
 
     </div>
-    // </LocalizationProvider>
+     </LocalizationProvider>
   );
 }
 
